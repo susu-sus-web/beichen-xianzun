@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>北辰仙尊（辣白菜）· 飞升纪念馆暨绝密红尘档案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div id="toast-container" class="floating-toast-container"></div>
+
+  <header class="top-nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <div class="brand-seal">北</div>
+        <div class="brand-text">
+          <span class="brand-title">北辰仙尊 · 辣白菜纪念馆</span>
+          <span class="brand-sub">BEICHEN IMMORTAL &amp; SPICY CABBAGE ARCHIVE</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#pinned" class="nav-link">📌 置顶三神迹</a>
+        <a href="#gallery-top" class="nav-link">✌️ 红尘合照</a>
+        <a href="#videos" class="nav-link">🎬 仙尊视频</a>
+        <a href="#stories" class="nav-link">📜 仙尊本纪与告别</a>
+        <button id="merit-btn" class="merit-btn">
+          🔥 给仙尊上香 (<span id="merit-count">999</span>)
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-tag">✦ 九天十地绝密档案 · 全球公网永久典藏 ✦</div>
+      <h1 class="hero-title">北辰仙尊 · 辣白菜</h1>
+      <p class="hero-subtitle">
+        凡间名号<strong>「辣白菜」</strong>，仙界尊号<strong>「北辰仙尊」</strong>。<br />
+        一手<strong>万古不动剪刀手✌️</strong>笑傲顶流红毯，一身<strong>暗夜紫衣蕾丝吊带👗</strong>艳压三界群芳。
+      </p>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <div class="stat-value">SSS+</div>
+          <div class="stat-label">剪刀手道心稳固度</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-value">99999%</div>
+          <div class="stat-label">暗夜女装魅魔战力</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-value">16 张 + 2 部</div>
+          <div class="stat-label">绝密神作全收录</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-value">永久在线</div>
+          <div class="stat-label">赛博封神纪念馆</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pinned" class="section-block">
+      <div class="section-header">
+        <span class="section-badge badge-pinned">📌 TOP PINNED · 殿堂级置顶展示</span>
+        <h2 class="section-title">三大镇馆神迹 · 置顶典藏</h2>
+        <p class="section-desc">点击任意神作可开启高清全屏瞻仰模式，近距离感受北辰仙尊（辣白菜）的三重境界</p>
+      </div>
+
+      <div class="pinned-grid">
+        <article class="pinned-card" data-lightbox="true" data-title="【置顶 NO.1】北辰仙尊 · 蔑视众生真容凝视" data-desc="三分薄凉、三分漫不经心、四分看透红尘的宗师级怼脸自拍。">
+          <div class="pinned-ribbon">👑 置顶 C 位 · 宗师真容</div>
+          <div class="pinned-img-wrap">
+            <img src="media/top1_closeup.jpg" alt="北辰仙尊真容凝视" />
+          </div>
+          <div class="pinned-body">
+            <div>
+              <h3 class="pinned-title">《仙尊真容 · 蔑视众生之凝视》</h3>
+              <p class="pinned-caption">寸头微立，嘴角含笑，眼神中透着“三界之内无人配让我换第二个表情”的绝对自信。</p>
+            </div>
+            <div class="pinned-tags">
+              <span class="tag-chip">#本体真容</span>
+              <span class="tag-chip">#波澜不惊</span>
+              <span class="tag-chip">#北辰本尊</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pinned-card card-featured" data-lightbox="true" data-title="【置顶核弹 NO.2】暗夜紫衣眼镜娘 · 混沌女装完全体" data-desc="白日寸头猛男，暗夜紫衣魅魔！黑框眼镜配蕾丝蝴蝶结吊带，手指轻点朱唇，直接震碎三界道心！">
+          <div class="pinned-ribbon">🌶️ 镇馆核弹 · 绝密女装</div>
+          <div class="pinned-img-wrap">
+            <img src="media/top2_purple.jpg" alt="北辰仙尊紫衣女装照" />
+          </div>
+          <div class="pinned-body">
+            <div>
+              <h3 class="pinned-title">《暗夜魅魔 · 紫衣眼镜娘完全体》</h3>
+              <p class="pinned-caption">仙尊渡劫最凶险的一集！黑框眼镜、微卷长发配紫色蝴蝶结小吊带，连女明星看了都得甘拜下风。</p>
+            </div>
+            <div class="pinned-tags">
+              <span class="tag-chip">#女装大佬</span>
+              <span class="tag-chip">#紫衣魅魔</span>
+              <span class="tag-chip">#辣白菜终极形态</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pinned-card" data-lightbox="true" data-title="【置顶 NO.3】金色大厅 · 皇室华尔兹终章" data-desc="璀璨水晶灯下，仙尊身披笔挺礼服与佳人翩翩起舞，尽显贵族风范。">
+          <div class="pinned-ribbon">💃 置顶名场面 · 殿堂共舞</div>
+          <div class="pinned-img-wrap">
+            <img src="media/top3_waltz.jpg" alt="金色大厅华尔兹" />
+          </div>
+          <div class="pinned-body">
+            <div>
+              <h3 class="pinned-title">《金色大厅 · 皇室华尔兹终章》</h3>
+              <p class="pinned-caption">当辣白菜终于放下剪刀手，在璀璨水晶灯下与佳人共舞华尔兹，优雅得让人不敢相认。</p>
+            </div>
+            <div class="pinned-tags">
+              <span class="tag-chip">#皇家舞会</span>
+              <span class="tag-chip">#终于不比耶了</span>
+              <span class="tag-chip">#仙尊排面</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery-top" class="section-block">
+      <div class="section-header">
+        <span class="section-badge badge-gallery">✌️ IMMORTAL ARCHIVE · 铁打的剪刀手，流水的女明星</span>
+        <h2 class="section-title">红尘历劫全图鉴（上篇）</h2>
+        <p class="section-desc">任凭身边佳人千娇百媚，我自寸头黑T、45度标准剪刀手巍然不动</p>
+      </div>
+
+      <div class="photo-grid">
+        <article class="photo-card" data-lightbox="true" data-title="大堂偶遇 · 香槟金礼服女神" data-desc="水晶吊灯下，女神灿烂甜笑，辣白菜祭出祖传涂鸦黑T与第一式标准剪刀手。">
+          <div class="photo-img-box">
+            <img src="media/pic01.jpg" alt="红尘历劫照1" loading="lazy" />
+            <span class="photo-badge">剪刀手标准度 100%</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第一劫 · 星级大堂初显威</h3>
+            <p class="photo-desc">女神笑靥如花，仙尊面色沉稳，涂鸦黑T开启红尘第一站。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="后台探班 · 搭肩依偎不乱心" data-desc="纵使美女单手搭肩贴贴，北辰仙尊眼神依旧毫无波澜，甚至手指角度都没偏0.1度。">
+          <div class="photo-img-box">
+            <img src="media/pic02.jpg" alt="红尘历劫照2" loading="lazy" />
+            <span class="photo-badge">道心稳固度 MAX</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第二劫 · 舞台后台搭肩杀</h3>
+            <p class="photo-desc">佳人玉手搭肩，仙尊稳如老狗，剪刀手封印一切凡尘杂念。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="红毯后台 · 珠光晚礼服贴头杀" data-desc="换场地不换姿势，只要涂鸦T恤还在身，三界就没有仙尊镇不住的场子。">
+          <div class="photo-img-box">
+            <img src="media/pic04.jpg" alt="红尘历劫照3" loading="lazy" />
+            <span class="photo-badge">同款姿势复刻 100%</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第三劫 · 闪耀后台贴头合拍</h3>
+            <p class="photo-desc">别人换造型换表情，辣白菜直接把头和手Ctrl+C、Ctrl+V。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="顶流联动 · 演唱会后台偶遇 Lisa" data-desc="国际顶流爱豆跟着一起比耶，完美被带进北辰仙尊的剪刀手节奏里！">
+          <div class="photo-img-box">
+            <img src="media/pic05.jpg" alt="红尘历劫照4" loading="lazy" />
+            <span class="photo-badge">双人同步比耶✌️</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第四劫 · 顶流后台双剪刀手</h3>
+            <p class="photo-desc">连国际女团顶流都被仙尊同化，乖乖跟着一起比出同款剪刀手。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="名流晚宴 · 西装革履的北辰仙尊" data-desc="难得脱下涂鸦黑T换上黑西装与领带，但灵魂深处的剪刀手绝对不能缺席！">
+          <div class="photo-img-box">
+            <img src="media/pic06.jpg" alt="红尘历劫照5" loading="lazy" />
+            <span class="photo-badge">西装暴徒形态</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第五劫 · 豪门晚宴西装杀</h3>
+            <p class="photo-desc">西装领带加身，皮肤可以换，但剪刀手技能树绝对焊死。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="机车皮衣 · 小香风甜妹合照" data-desc="换上帅气黑皮衣配工牌，在甜美攻势下依旧保持宗师级淡定微笑。">
+          <div class="photo-img-box">
+            <img src="media/pic07.jpg" alt="红尘历劫照6" loading="lazy" />
+            <span class="photo-badge">皮衣战神皮肤</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第六劫 · 酷飒皮衣甜妹局</h3>
+            <p class="photo-desc">皮衣一穿谁都不爱，甜妹在侧，心里只在盘算今晚穿哪件紫吊带。</p>
+          </div>
+        </article>
+      </div>
+
+      <div id="videos" class="video-interlude">
+        <div class="section-header" style="margin-bottom: 16px;">
+          <span class="section-badge badge-video">🎬 LIVE FOOTAGE · 动态神迹夹心剧场</span>
+          <h2 class="section-title">北辰仙尊 · 绝密动态影像实录</h2>
+          <p class="section-desc">静态照片已不足以封印仙尊的魅力，请直接点击播放，欣赏辣白菜的动态仙姿</p>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-player-wrap">
+              <video src="media/video1.mp4" controls playsinline preload="metadata" poster="media/pic03_dance.jpg"></video>
+            </div>
+            <div class="video-meta">
+              <div>
+                <div class="video-title">🎥 仙尊动态神迹 · 壹号实录</div>
+                <div class="video-sub">九天十地独门身法演练，建议全屏循环播放</div>
+              </div>
+              <span class="tag-chip">高清原片</span>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-player-wrap">
+              <video src="media/video2.mp4" controls playsinline preload="metadata" poster="media/top3_waltz.jpg"></video>
+            </div>
+            <div class="video-meta">
+              <div>
+                <div class="video-title">🎥 仙尊动态神迹 · 贰号实录</div>
+                <div class="video-sub">红尘幻境高光时刻，每一帧都是表情包素材</div>
+              </div>
+              <span class="tag-chip">典藏影像</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top: 48px;">
+        <span class="section-badge badge-gallery">✌️ IMMORTAL ARCHIVE PART II · 仙尊红尘全图鉴（下篇）</span>
+        <h2 class="section-title">红尘历劫全图鉴（下篇）</h2>
+        <p class="section-desc">从古装剧组到午夜街头，从电影首映礼到练功房独舞，辣白菜的传说无处不在</p>
+      </div>
+
+      <div class="photo-grid">
+        <article class="photo-card" data-lightbox="true" data-title="后台Wink杀 · 仙尊依旧不为所动" data-desc="旁边美女已经使出必杀技Wink嘟嘴，仙尊依然保持着官方认证的标准微笑。">
+          <div class="photo-img-box">
+            <img src="media/pic08.jpg" alt="红尘历劫照7" loading="lazy" />
+            <span class="photo-badge">免疫魅惑 100%</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第七劫 · 绝美Wink免疫测试</h3>
+            <p class="photo-desc">Wink攻击无效！仙尊内心毫无波澜，甚至觉得不如自己的紫衣眼镜造型。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="冬日剧组 · 神仙姐姐片场探班" data-desc="披上黑色羽绒服穿越片场，与神仙姐姐亲密依偎，剪刀手穿过寒冬依然滚烫。">
+          <div class="photo-img-box">
+            <img src="media/pic09.jpg" alt="红尘历劫照8" loading="lazy" />
+            <span class="photo-badge">冬日羽绒服限定</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第八劫 · 寒冬片场神仙局</h3>
+            <p class="photo-desc">天冷加羽绒服，但右手食指与中指的分叉角度绝不妥协半分。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="盛典内场 · 高定钻饰女神同框" data-desc="胸挂VIP通行证直入内场，与璀璨晚礼服女神并肩而立。">
+          <div class="photo-img-box">
+            <img src="media/pic10.jpg" alt="红尘历劫照9" loading="lazy" />
+            <span class="photo-badge">内场VIP尊享</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第九劫 · 盛典晚宴星光夜</h3>
+            <p class="photo-desc">戴上工作证就是全场最靓的仔，神仙姐姐也得配合仙尊的节奏。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="古风庭院 · 跨越千年的剪刀手" data-desc="古色古香的江南庭院里，涂鸦T恤与古装仙女形成跨次元绝妙碰撞。">
+          <div class="photo-img-box">
+            <img src="media/pic11.jpg" alt="红尘历劫照10" loading="lazy" />
+            <span class="photo-badge">跨次元破壁</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第十劫 · 古风庭院跨时空同框</h3>
+            <p class="photo-desc">潮牌黑T闯入古装片场，这就是北辰仙尊撕裂时空的恐怖实力。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="电影首映礼 · 搂肩C位大合照" data-desc="在电影首映礼背景板前霸气搂肩，右下角甚至诚实地留下了“AI合成照片”的防伪印记。">
+          <div class="photo-img-box">
+            <img src="media/pic12.jpg" alt="红尘历劫照11" loading="lazy" />
+            <span class="photo-badge">首映礼特邀男主</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第十一劫 · 电影首映礼C位男主</h3>
+            <p class="photo-desc">左手搂肩右手比耶，连右下角的“AI合成照片”水印都在为仙尊喝彩。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="午夜街头 · 挽臂压马路实录" data-desc="夜幕下的繁华街道，佳人挽住仙尊手臂小鸟依人，仙尊依旧目视前方淡定比耶。">
+          <div class="photo-img-box">
+            <img src="media/pic13.jpg" alt="红尘历劫照12" loading="lazy" />
+            <span class="photo-badge">街头狗仔抓拍</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第十二劫 · 午夜街头挽臂同行</h3>
+            <p class="photo-desc">挽手逛街被抓拍？不要慌，先把剪刀手摆好才是最重要的礼仪。</p>
+          </div>
+        </article>
+
+        <article class="photo-card" data-lightbox="true" data-title="练功密室 · 舞室C位定海神针" data-desc="霓虹闪烁的练习室里，辣白菜双臂自然下垂、面带微笑笔直站立，宛如准备放大招的隐藏BOSS。">
+          <div class="photo-img-box">
+            <img src="media/pic03_dance.jpg" alt="练习室全身照" loading="lazy" />
+            <span class="photo-badge">唱跳俱佳预备役</span>
+          </div>
+          <div class="photo-info">
+            <h3 class="photo-title">第十三劫 · 练功房C位罚站悟道</h3>
+            <p class="photo-desc">全场灯光就位，仙尊双手垂立微微一笑：本尊还没发力，你们先跳。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stories" class="chronicles-section">
+      <div class="section-header">
+        <span class="section-badge badge-story">📜 SACRED CHRONICLES &amp; FAREWELL · 压轴长卷</span>
+        <h2 class="section-title">北辰仙尊本纪 · 女装秘闻与告别书</h2>
+        <p class="section-desc">谨以此文，献给我们独一无二的兄弟——辣白菜（北辰仙尊）</p>
+      </div>
+
+      <div class="story-stack">
+        <article class="story-scroll">
+          <div class="scroll-header">
+            <div class="scroll-kicker">CHRONICLE I · 仙尊正传</div>
+            <h3 class="scroll-title">📜 《北辰仙尊 · 红尘本纪》</h3>
+          </div>
+          <div class="scroll-content">
+            <p>
+              世人只知凡间有一猛男，江湖人称<strong>“辣白菜”</strong>——外酸内辣，脆爽上头，乃是兄弟局里最下饭的灵魂人物；却鲜有人知，他真正的身份，乃是统御九天十地、修习无上定力大道的<strong>“北辰仙尊”</strong>。
+            </p>
+            <p>
+              数年前，北辰仙尊为勘破红尘情劫，化名“辣白菜”真身下凡历练。在下界历劫期间，仙尊独创了一门震古烁今的绝学——<strong>《万古不动剪刀手神功》</strong>。
+            </p>
+            <p>
+              你看上面流出的红尘留影便知：无论身边站着的是古装神仙姐姐、红毯顶流女星，还是在午夜街头偶遇国际女团爱豆挽臂贴贴，仙尊永远保持着<strong>头顶寸发微立、嘴角三分淡笑、眼神七分慈悲</strong>的宗师气度。任凭身旁佳人巧笑倩兮，仙尊的手指始终稳如泰山，以精确到毫厘的 45 度角比出那个封印三界的“耶✌️”。那不是普通的剪刀手，那是仙尊斩断凡尘桃花、守护道心不乱的无上剑指！
+            </p>
+            <p>
+              而后，仙尊又于练功房独舞悟道，最终在金碧辉煌的西洋宫殿之中，身披黑金礼服，与佳人共舞一曲华尔兹，彻底圆满了他这波澜壮阔、抽象至极又潇洒万分的红尘修行。
+            </p>
+          </div>
+        </article>
+
+        <article class="story-scroll scroll-purple">
+          <div class="scroll-header">
+            <div class="scroll-kicker">CHRONICLE II · 绝密番外篇</div>
+            <h3 class="scroll-title">👗 《北辰仙尊秘闻录：白日剪刀手，暗夜紫衣娘》</h3>
+          </div>
+          <div class="scroll-content">
+            <p>
+              三界之中一直流传着一个未解之谜：<strong>为什么北辰仙尊（辣白菜）跟那么多顶级女明星合照时，眼神里非但没有半点爱慕，反而隐隐透着一丝“就这？”的从容与轻蔑？</strong>
+            </p>
+            <p>
+              起初，众道友以为仙尊是因为修习了无情道，心如止水。直到那个月黑风高的夜晚，有人无意间闯入了仙尊的闭关洞府，才揭开了震惊三界的真相——<strong>原来仙尊根本不是不近女色，他看女明星那眼神，分明是在审视同行！</strong>
+            </p>
+            <p>
+              据知情人士透露，辣白菜表面上是铁骨铮铮、寸头黑T的硬汉仙尊，实则早在多年前便觉醒了罕见的<strong>“混沌双生女装圣体”</strong>。每当他看着身旁女明星身上的高定礼服、吊带长裙，他心里想的从来不是“她好美”，而是：
+            </p>
+            <blockquote class="scroll-quote">
+              “这件衣服版型一般，要是换本尊来穿，效果绝对秒杀她。”
+            </blockquote>
+            <p>
+              终于，仙尊不再满足于只在心里暗暗比较。每当夜幕降临、世人沉睡之时，那个满脸正气的寸头猛男便会封印阳刚之气，从乾坤袋底层掏出珍藏已久的<strong>黑框素颜镜、乌黑大波浪长发，以及那件战力突破天际的“淡紫蝴蝶结蕾丝小吊带”</strong>。
+            </p>
+            <p>
+              当他换上女装、斜倚在暖黄台灯下的床榻上，左手轻抚锁骨，右手食指微微点在朱唇边，对着镜头拍下那张置顶传世神作时，整个修仙界的审美体系彻底崩塌了！什么神仙姐姐、什么国际顶流，在“北辰魅魔·紫衣辣白菜”面前全都黯然失色。
+            </p>
+            <p>
+              从那以后，坊间便有了一句名言：<strong>“白日寸头比耶装淡定，夜半紫衣吊带真绝色。世人皆笑辣白菜不懂风情，殊不知仙尊自己就是最顶的女人！”</strong>
+            </p>
+          </div>
+        </article>
+
+        <article class="story-scroll scroll-farewell">
+          <div class="scroll-header">
+            <div class="scroll-kicker">FINAL CHAPTER · 终章告别书</div>
+            <h3 class="scroll-title">🥂 《致辣白菜（北辰仙尊）的告别信》</h3>
+          </div>
+          <div class="scroll-content">
+            <p>
+              <strong>敬启者：辣白菜（尊号：北辰仙尊）</strong>
+            </p>
+            <p>
+              当你一路滑到页面最底下看到这段话的时候，估计已经对着上面那些“置顶镇馆神照”和视频血压飙升、准备顺着网线过来暗杀我了。
+            </p>
+            <p>
+              但说真的，之所以费尽心思把你这些“万年剪刀手合集”、“练习室舞姿”还有那张震碎三观的“紫衣眼镜娘女装神图”全都打包做成网站、送上全球公网永久保存，是因为——<strong>有些快乐和回忆，实在舍不得让它只停留在聊天记录里过期。</strong>
+            </p>
+            <p>
+              认识你这么久，“辣白菜”这个名字早就成了我们这帮人开心果的代名词。不管平时多无聊的局、多离谱的整活，只要有你在，气氛永远不会冷场。你就像你照片里那个万年不变的剪刀手一样，永远淡定、永远乐观、永远带着点让人忍俊不禁的幽默感。
+            </p>
+            <p>
+              天下没有不散的宴席，如今你即将踏上新的征途，去开启人生的下一个“飞升副本”了。当兄弟的也没什么千金重礼，就送你一座全网独一无二的<strong>“北辰仙尊赛博纪念馆”</strong>。
+            </p>
+            <p>
+              以后无论你走到哪里，是在新的天地里继续叱咤风云，还是在人生的金色大厅里跳着华尔兹，只要点开这个网址，就能想起咱们一起插科打诨、互相P图造孽的岁月。
+            </p>
+            <p>
+              愿你此去前程似锦，无论遇到多大的风浪，都能像跟女明星合照时那样——<strong>面不改色，淡定比耶✌️</strong>。
+            </p>
+          </div>
+
+          <div class="farewell-signoff">
+            <div class="signoff-text">
+              山高水长，江湖再见！恭送北辰仙尊，祝我们永远的“辣白菜”一路顺风！
+            </div>
+            <button id="salute-btn" class="salute-btn">
+              🥂 点击为北辰仙尊（辣白菜）放礼花践行
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-inner">
+      <button id="lightbox-close" class="lightbox-close" aria-label="关闭">×</button>
+      <div class="lightbox-media">
+        <img id="lightbox-img" src="" alt="预览大图" />
+      </div>
+      <div class="lightbox-caption-bar">
+        <div id="lightbox-title" class="lightbox-title"></div>
+        <div id="lightbox-desc" class="lightbox-desc"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>✦ 北辰仙尊（辣白菜）红尘历劫纪念馆 · 友谊长存 · 永久典藏于 Vercel 全球网络 ✦</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
