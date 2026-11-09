@@ -149,3 +149,21 @@ if (canvas) {
 
   drawParticles();
 }
+
+const cdnMirrors = [
+  'https://testingcf.jsdelivr.net/gh/susu-sus-web/beichen-xianzun@main/',
+  'https://fastly.jsdelivr.net/gh/susu-sus-web/beichen-xianzun@main/',
+  'https://gcore.jsdelivr.net/gh/susu-sus-web/beichen-xianzun@main/'
+];
+
+document.querySelectorAll('img[src^="media/"]').forEach((img) => {
+  const relPath = img.getAttribute('src');
+  let mirrorIdx = 0;
+  img.addEventListener('error', () => {
+    if (mirrorIdx < cdnMirrors.length) {
+      img.src = cdnMirrors[mirrorIdx] + relPath;
+      mirrorIdx += 1;
+    }
+  });
+});
+
